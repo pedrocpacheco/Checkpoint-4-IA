@@ -1,6 +1,7 @@
 # Importando funções que facilitam o codigo
 from utils import get_quantity, get_numeros
 
+
 # Função que encontra a moda de uma lista
 def moda():
   quantity = get_quantity()
@@ -15,9 +16,11 @@ def moda():
       moda = numero 
       maior_contagem = contagem
   
-  print(moda)
-  
+  print(f"Moda: {moda}")
+
+# Chamando função que mostra moda
 moda()
+
 
 # Função que encontra a mediana de uma lista
 def mediana():
@@ -33,6 +36,7 @@ def mediana():
     print(mediana)
   else: 
     mediana = numeros[tamanho_lista // 2]
-    print(mediana)
-    
+    print(f"Mediana: {mediana}")
+  
+# Chamando função que mostra mediana
 mediana()

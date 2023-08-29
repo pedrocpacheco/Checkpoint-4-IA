@@ -16,6 +16,7 @@ def get_valores_e_pesos():
 
     return valores, pesos
 
+
 def media_ponderada():
     valores, pesos = get_valores_e_pesos()
 
@@ -24,7 +25,7 @@ def media_ponderada():
 
     resultado = total_produto / total_peso
 
-    print(f"A média ponderada é: {resultado}")
+    print(f"Média Ponderada: {resultado}")
 
 media_ponderada()
 

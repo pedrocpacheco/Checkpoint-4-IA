@@ -1,6 +1,7 @@
 # Importando funções que facilitam o codigo
 from utils import get_quantity, get_numeros
 
+
 # Função que pega os valore e seus pesos
 def get_valor_peso():
   quantity = get_quantity()
@@ -22,6 +23,7 @@ def get_produtos(valores, pesos):
     
   return produtos
 
+
 # Função que faz a matemática da média ponderada
 def media_ponderada():
   [valores, pesos] = get_valor_peso()
@@ -37,7 +39,7 @@ def media_ponderada():
     total_produto += produto
     
   result = total_produto / total_peso
-  print(result)
+  print(f"Media Ponderada: {result}")
   
 # Chamando função média ponderada
 media_ponderada()
