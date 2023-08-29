@@ -20,4 +20,21 @@ def geometrica():
     result = total ** 1/quantity
     print(result)
 
+# Rodando função geometrica
 geometrica()
+
+# Função que calcula média harmônica
+def harmonica():
+    quantity = get_quantity()
+    numeros = get_numeros(quantity)
+    for i in range(len(numeros)):
+        if numeros[i] == 0:
+            numeros[i] = 0
+        else:
+            numeros[i] = 1 / numeros[i]
+    total = get_total("+", numeros)
+    result = quantity / total
+    print (result)
+
+# Rodando função geometrica
+harmonica()

@@ -17,3 +17,4 @@ def get_total(op, numeros):
     if op == "*":
         for valor in numeros:
             total *= valor
+    return total
